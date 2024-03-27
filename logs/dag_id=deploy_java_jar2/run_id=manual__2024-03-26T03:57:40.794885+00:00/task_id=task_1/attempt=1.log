@@ -1,0 +1,17 @@
+[2024-03-26T03:57:42.201+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: deploy_java_jar2.task_1 manual__2024-03-26T03:57:40.794885+00:00 [queued]>
+[2024-03-26T03:57:42.213+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: deploy_java_jar2.task_1 manual__2024-03-26T03:57:40.794885+00:00 [queued]>
+[2024-03-26T03:57:42.213+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-26T03:57:42.229+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): task_1> on 2024-03-26 03:57:40.794885+00:00
+[2024-03-26T03:57:42.236+0000] {standard_task_runner.py:60} INFO - Started process 360 to run task
+[2024-03-26T03:57:42.241+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'deploy_java_jar2', 'task_1', 'manual__2024-03-26T03:57:40.794885+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/execute.py', '--cfg-path', '/tmp/tmpnzhz3wgo']
+[2024-03-26T03:57:42.242+0000] {standard_task_runner.py:88} INFO - Job 29: Subtask task_1
+[2024-03-26T03:57:42.300+0000] {task_command.py:423} INFO - Running <TaskInstance: deploy_java_jar2.task_1 manual__2024-03-26T03:57:40.794885+00:00 [running]> on host aafb497b2b81
+[2024-03-26T03:57:42.438+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='deploy_java_jar2' AIRFLOW_CTX_TASK_ID='task_1' AIRFLOW_CTX_EXECUTION_DATE='2024-03-26T03:57:40.794885+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-26T03:57:40.794885+00:00'
+[2024-03-26T03:57:42.440+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-26T03:57:42.441+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo "Task 1 Executed"']
+[2024-03-26T03:57:42.455+0000] {subprocess.py:86} INFO - Output:
+[2024-03-26T03:57:42.458+0000] {subprocess.py:93} INFO - Task 1 Executed
+[2024-03-26T03:57:42.458+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-26T03:57:42.492+0000] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=deploy_java_jar2, task_id=task_1, execution_date=20240326T035740, start_date=20240326T035742, end_date=20240326T035742
+[2024-03-26T03:57:42.533+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-26T03:57:42.571+0000] {taskinstance.py:3312} INFO - 2 downstream tasks scheduled from follow-on schedule check

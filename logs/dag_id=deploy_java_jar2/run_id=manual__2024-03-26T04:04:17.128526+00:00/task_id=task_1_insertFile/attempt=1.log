@@ -1,0 +1,30 @@
+[2024-03-26T04:04:18.121+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: deploy_java_jar2.task_1_insertFile manual__2024-03-26T04:04:17.128526+00:00 [queued]>
+[2024-03-26T04:04:18.132+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: deploy_java_jar2.task_1_insertFile manual__2024-03-26T04:04:17.128526+00:00 [queued]>
+[2024-03-26T04:04:18.132+0000] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-26T04:04:18.148+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): task_1_insertFile> on 2024-03-26 04:04:17.128526+00:00
+[2024-03-26T04:04:18.154+0000] {standard_task_runner.py:60} INFO - Started process 469 to run task
+[2024-03-26T04:04:18.158+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'deploy_java_jar2', 'task_1_insertFile', 'manual__2024-03-26T04:04:17.128526+00:00', '--job-id', '33', '--raw', '--subdir', 'DAGS_FOLDER/execute.py', '--cfg-path', '/tmp/tmp7pwc7e38']
+[2024-03-26T04:04:18.160+0000] {standard_task_runner.py:88} INFO - Job 33: Subtask task_1_insertFile
+[2024-03-26T04:04:18.217+0000] {task_command.py:423} INFO - Running <TaskInstance: deploy_java_jar2.task_1_insertFile manual__2024-03-26T04:04:17.128526+00:00 [running]> on host aafb497b2b81
+[2024-03-26T04:04:18.347+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='deploy_java_jar2' AIRFLOW_CTX_TASK_ID='task_1_insertFile' AIRFLOW_CTX_EXECUTION_DATE='2024-03-26T04:04:17.128526+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-26T04:04:17.128526+00:00'
+[2024-03-26T04:04:18.349+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-26T04:04:18.350+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/handle/insertFile.py']
+[2024-03-26T04:04:18.365+0000] {subprocess.py:86} INFO - Output:
+[2024-03-26T04:04:18.844+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2024-03-26T04:04:18.844+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/handle/insertFile.py", line 37, in <module>
+[2024-03-26T04:04:18.845+0000] {subprocess.py:93} INFO -     with open(file_path, "r") as file:
+[2024-03-26T04:04:18.845+0000] {subprocess.py:93} INFO - FileNotFoundError: [Errno 2] No such file or directory: './log/logch.txt'
+[2024-03-26T04:04:18.880+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-03-26T04:04:18.897+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-03-26T04:04:18.902+0000] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=deploy_java_jar2, task_id=task_1_insertFile, execution_date=20240326T040417, start_date=20240326T040418, end_date=20240326T040418
+[2024-03-26T04:04:18.919+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 33 for task task_1_insertFile (Bash command failed. The command returned a non-zero exit code 1.; 469)
+[2024-03-26T04:04:18.932+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-26T04:04:18.963+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

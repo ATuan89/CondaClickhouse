@@ -1,0 +1,30 @@
+[2024-03-25T09:15:23.647+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: deploy_java_jar2.task_2 manual__2024-03-25T09:15:14.113592+00:00 [queued]>
+[2024-03-25T09:15:23.660+0000] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: deploy_java_jar2.task_2 manual__2024-03-25T09:15:14.113592+00:00 [queued]>
+[2024-03-25T09:15:23.661+0000] {taskinstance.py:2193} INFO - Starting attempt 2 of 2
+[2024-03-25T09:15:23.679+0000] {taskinstance.py:2217} INFO - Executing <Task(BashOperator): task_2> on 2024-03-25 09:15:14.113592+00:00
+[2024-03-25T09:15:23.686+0000] {standard_task_runner.py:60} INFO - Started process 302 to run task
+[2024-03-25T09:15:23.690+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'deploy_java_jar2', 'task_2', 'manual__2024-03-25T09:15:14.113592+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/execute.py', '--cfg-path', '/tmp/tmpy522pj5g']
+[2024-03-25T09:15:23.691+0000] {standard_task_runner.py:88} INFO - Job 6: Subtask task_2
+[2024-03-25T09:15:23.746+0000] {task_command.py:423} INFO - Running <TaskInstance: deploy_java_jar2.task_2 manual__2024-03-25T09:15:14.113592+00:00 [running]> on host aaae036974ec
+[2024-03-25T09:15:23.826+0000] {taskinstance.py:2513} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='deploy_java_jar2' AIRFLOW_CTX_TASK_ID='task_2' AIRFLOW_CTX_EXECUTION_DATE='2024-03-25T09:15:14.113592+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-25T09:15:14.113592+00:00'
+[2024-03-25T09:15:23.827+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-03-25T09:15:23.828+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/dags/handle/query1.py']
+[2024-03-25T09:15:23.843+0000] {subprocess.py:86} INFO - Output:
+[2024-03-25T09:15:23.873+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2024-03-25T09:15:23.874+0000] {subprocess.py:93} INFO -   File "/opt/***/dags/handle/query1.py", line 1, in <module>
+[2024-03-25T09:15:23.874+0000] {subprocess.py:93} INFO -     from clickhouse_driver import Client
+[2024-03-25T09:15:23.875+0000] {subprocess.py:93} INFO - ModuleNotFoundError: No module named 'clickhouse_driver'
+[2024-03-25T09:15:23.877+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-03-25T09:15:23.889+0000] {taskinstance.py:2731} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-03-25T09:15:23.892+0000] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=deploy_java_jar2, task_id=task_2, execution_date=20240325T091514, start_date=20240325T091523, end_date=20240325T091523
+[2024-03-25T09:15:23.913+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 6 for task task_2 (Bash command failed. The command returned a non-zero exit code 1.; 302)
+[2024-03-25T09:15:23.943+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-25T09:15:23.973+0000] {taskinstance.py:3312} INFO - 0 downstream tasks scheduled from follow-on schedule check

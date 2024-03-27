@@ -1,0 +1,35 @@
+[2024-03-27T01:44:36.145+0000] {processor.py:161} INFO - Started process (PID=36) to work on /opt/airflow/dags/execute.py
+[2024-03-27T01:44:36.147+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/execute.py for tasks to queue
+[2024-03-27T01:44:36.150+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:44:36.149+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/execute.py
+[2024-03-27T01:44:36.173+0000] {processor.py:840} INFO - DAG(s) 'deploy_project_clickhouse' retrieved from /opt/airflow/dags/execute.py
+[2024-03-27T01:44:36.223+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:44:36.223+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-27T01:44:36.268+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:44:36.268+0000] {dag.py:3834} INFO - Setting next_dagrun for deploy_project_clickhouse to 2024-03-26 09:30:00+00:00, run_after=2024-03-27 09:30:00+00:00
+[2024-03-27T01:44:36.296+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/execute.py took 0.156 seconds
+[2024-03-27T01:45:06.606+0000] {processor.py:161} INFO - Started process (PID=45) to work on /opt/airflow/dags/execute.py
+[2024-03-27T01:45:06.607+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/execute.py for tasks to queue
+[2024-03-27T01:45:06.608+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:45:06.608+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/execute.py
+[2024-03-27T01:45:06.620+0000] {processor.py:840} INFO - DAG(s) 'deploy_project_clickhouse' retrieved from /opt/airflow/dags/execute.py
+[2024-03-27T01:45:06.660+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:45:06.659+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-27T01:45:06.719+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:45:06.718+0000] {dag.py:3834} INFO - Setting next_dagrun for deploy_project_clickhouse to 2024-03-26 09:30:00+00:00, run_after=2024-03-27 09:30:00+00:00
+[2024-03-27T01:45:06.762+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/execute.py took 0.160 seconds
+[2024-03-27T01:45:36.977+0000] {processor.py:161} INFO - Started process (PID=54) to work on /opt/airflow/dags/execute.py
+[2024-03-27T01:45:36.982+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/execute.py for tasks to queue
+[2024-03-27T01:45:36.984+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:45:36.984+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/execute.py
+[2024-03-27T01:45:36.998+0000] {processor.py:840} INFO - DAG(s) 'deploy_project_clickhouse' retrieved from /opt/airflow/dags/execute.py
+[2024-03-27T01:45:37.033+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:45:37.032+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-27T01:45:37.057+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:45:37.057+0000] {dag.py:3834} INFO - Setting next_dagrun for deploy_project_clickhouse to 2024-03-26 09:30:00+00:00, run_after=2024-03-27 09:30:00+00:00
+[2024-03-27T01:45:37.077+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/execute.py took 0.103 seconds
+[2024-03-27T01:46:07.436+0000] {processor.py:161} INFO - Started process (PID=64) to work on /opt/airflow/dags/execute.py
+[2024-03-27T01:46:07.437+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/execute.py for tasks to queue
+[2024-03-27T01:46:07.439+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:46:07.439+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/execute.py
+[2024-03-27T01:46:07.452+0000] {processor.py:840} INFO - DAG(s) 'deploy_project_clickhouse' retrieved from /opt/airflow/dags/execute.py
+[2024-03-27T01:46:07.482+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:46:07.482+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-27T01:46:07.506+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:46:07.506+0000] {dag.py:3834} INFO - Setting next_dagrun for deploy_project_clickhouse to 2024-03-26 09:30:00+00:00, run_after=2024-03-27 09:30:00+00:00
+[2024-03-27T01:46:07.526+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/execute.py took 0.095 seconds
+[2024-03-27T01:46:37.865+0000] {processor.py:161} INFO - Started process (PID=73) to work on /opt/airflow/dags/execute.py
+[2024-03-27T01:46:37.866+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/execute.py for tasks to queue
+[2024-03-27T01:46:37.868+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:46:37.868+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/execute.py
+[2024-03-27T01:46:37.880+0000] {processor.py:840} INFO - DAG(s) 'deploy_project_clickhouse' retrieved from /opt/airflow/dags/execute.py
+[2024-03-27T01:46:37.908+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:46:37.908+0000] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-27T01:46:37.933+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:46:37.933+0000] {dag.py:3834} INFO - Setting next_dagrun for deploy_project_clickhouse to 2024-03-26 09:30:00+00:00, run_after=2024-03-27 09:30:00+00:00
+[2024-03-27T01:46:37.951+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/execute.py took 0.090 seconds

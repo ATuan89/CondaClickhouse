@@ -1,0 +1,6 @@
+[2024-03-27T01:44:35.900+0000] {processor.py:161} INFO - Started process (PID=34) to work on /opt/airflow/dags/postgres/postgres.py
+[2024-03-27T01:44:35.901+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/postgres/postgres.py for tasks to queue
+[2024-03-27T01:44:35.904+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:44:35.904+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/postgres/postgres.py
+[2024-03-27T01:45:56.212+0000] {processor.py:161} INFO - Started process (PID=62) to work on /opt/airflow/dags/postgres/postgres.py
+[2024-03-27T01:45:56.213+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/postgres/postgres.py for tasks to queue
+[2024-03-27T01:45:56.215+0000] {logging_mixin.py:188} INFO - [2024-03-27T01:45:56.215+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/postgres/postgres.py
